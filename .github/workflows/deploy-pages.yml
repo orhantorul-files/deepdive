@@ -31,8 +31,7 @@ jobs:
       - name: Prepare site artifact
         run: |
           mkdir -p _site
-          cp gold.mp3 _site/gold.mp3
-          cp reflex.mp3 _site/reflex.mp3
+          cp *.mp3 _site/
           touch _site/.nojekyll
 
       - name: Upload artifact
